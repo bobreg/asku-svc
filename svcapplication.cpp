@@ -24,6 +24,11 @@ AskuSvcApplication::AskuSvcApplication(int & argc, char** argv)
 	loadSettings();
 
 	svcModule = new AskuSvcModule(this, IDGPR());
+
+//---------Чел!------------
+//----------запуск скрипта проверки работы программы------
+    control_run.startDetached("/opt/amcs-observer/check_asku_svc");
+//---------Чел!------------
 }
 
 //-----------------------------------------------------------------------------
