@@ -14,11 +14,7 @@ Q_OBJECT
 
 private:
 	virtual bool writeSettings(QSettings &m_settings);
-	virtual bool readSettings (QSettings &m_settings);
-//---------Чел!------------
-//----------запуск скрипта проверки работы программы------
-    QProcess control_run;
-//---------Чел!------------
+    virtual bool readSettings (QSettings &m_settings);
 
 public:
 	AskuSvcApplication(int & argc, char** argv);
